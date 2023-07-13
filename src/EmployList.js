@@ -10,7 +10,7 @@ const EmployList = () => {
     const [employe,setEmploye] =useState([])
 
     useEffect(()=>{
-        Axios.get('http://localhost:3000/employee')
+        Axios.get('http://localhost:8000/employee')
         // .then(response=>response.json())
         .then(result=>setEmploye(result.data))
 
@@ -25,7 +25,7 @@ const EmployList = () => {
     const deleteData=(id)=>{
         // navigate('/employee/delete/'+id)
         if(window.confirm('want to delete')){
-            Axios.delete('http://localhost:3000/employee/'+id)
+            Axios.delete('http://localhost:8000/employee/'+id)
                 // .then(response=>response.json())
                 .then(result=>{
                     alert('Data removed sucessfully')

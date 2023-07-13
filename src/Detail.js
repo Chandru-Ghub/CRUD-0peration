@@ -7,7 +7,7 @@ const Detail = () => {
     const {id} = useParams();
     const [val,setVal] = useState({})
     useEffect(()=>{
-        Axios.get('http://localhost:3000/employee/'+id)
+        Axios.get('http://localhost:8000/employee/'+id)
         // .then(response=>response.json())
         .then(result=>setVal(result.data))
            

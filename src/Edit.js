@@ -11,7 +11,7 @@ const Edit = () => {
     const {id} = useParams();
     const [val,setVal] = useState({})
     useEffect(()=>{
-        Axios.get('http://localhost:3000/employee/'+id)
+        Axios.get('http://localhost:8000/employee/'+id)
         // .then(response=>response.json())
         .then((result) => {
             setName(result.data.name)
@@ -28,7 +28,7 @@ const Edit = () => {
             e.preventDefault();
             console.log({name,email,phone})
           
-            fetch('http://localhost:3000/employee/'+id,{
+            fetch('http://localhost:8000/employee/'+id,{
                 method:'PUT',
                 headers:{'content-type':'application/json'},
                 body:JSON.stringify({id,name,email,phone})
