@@ -14,7 +14,7 @@ const EmployList = () => {
         // .then(response=>response.json())
         .then(result=>setEmploye(result.data))
 
-    },[])
+    })
  
     const detailData=(id)=>{
         navigate('/employee/detail/'+id)
