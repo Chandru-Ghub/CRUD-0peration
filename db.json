@@ -1,0 +1,22 @@
+{
+  "employee": [
+    {
+      "id": 1,
+      "name": "chandru",
+      "email": "chan@april.biz",
+      "phone": "1-770-736-8031 x56442"
+    },
+    {
+      "name": "santhosh",
+      "email": "santhk@gmail.com",
+      "phone": "4587996523",
+      "id": 5
+    },
+    {
+      "name": "kumar",
+      "email": "jumarg@gmail.com",
+      "phone": "4661616",
+      "id": 6
+    }
+  ]
+}
